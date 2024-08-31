@@ -4,9 +4,9 @@ nginx-proxy-peer-host
 This Nginx HTTP module provides only one variable *&dollar;proxy_peer_host*
 which is similar to variable *&dollar;proxy_host* from [Nginx HTTP proxy
 module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html). While the
-latter variable contains the name of the upstream which is being proxied to,
-variable *&dollar;proxy_peer_host* contains the name of the actual server inside
-the upstream.
+latter variable contains the name of the upstream which a client request is
+being proxied to, variable *&dollar;proxy_peer_host* contains the name of the
+actual server inside the upstream.
 
 Let's test a simple configuration.
 
@@ -49,7 +49,7 @@ http {
 }
 ```
 
-The value of *&dollar;proxy_peer_host* must change in round-robin manner when
+The value of *&dollar;proxy_peer_host* must rotate in a round-robin manner when
 we do sequential HTTP requests to location */u1*.
 
 ```ShellSession
