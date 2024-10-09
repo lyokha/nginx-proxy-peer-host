@@ -1,6 +1,8 @@
 nginx-proxy-peer-host
 =====================
 
+[![Build Status](https://github.com/lyokha/nginx-proxy-peer-host/workflows/CI/badge.svg)](https://github.com/lyokha/nginx-proxy-peer-host/actions?query=workflow%3ACI)
+
 This Nginx HTTP module provides only one variable *&dollar;proxy_peer_host*
 which is similar to variable *&dollar;proxy_host* from [Nginx HTTP proxy
 module](https://nginx.org/en/docs/http/ngx_http_proxy_module.html). While the
